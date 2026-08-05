@@ -1,0 +1,13 @@
+source file name , phase name , phase input files , phase output file , arch , tool, metric , unit
+test.cu , cl.exe (preprocessing 4) , test.cu  , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-10_test.cpp4.ii ,  , nvcc , 182.2895 , ms
+test.cu , cudafe++ , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-10_test.cpp4.ii  , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-11_test.cudafe1.cpp , compute_86 , nvcc , 290.6620 , ms
+test.cu , cl.exe (preprocessing 1) , test.cu  , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-16_test.cpp1.ii , compute_86 , nvcc , 209.0756 , ms
+test.cu , cicc ,  C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-16_test.cpp1.ii  , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-11_test.ptx , compute_86 , nvcc , 334.2648 , ms
+test.cu , ptxas , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-11_test.ptx  , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-19_test.cubin , sm_86 , nvcc , 49.0499 , ms
+test.cu , fatbinary , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-19_test.cubin  , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-8_test.fatbin ,  , nvcc , 29.0489 , ms
+test.cu , cl.exe (compiling) ,   , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-20_test.obj , compute_86 , nvcc , 326.5558 , ms
+test.cu  , nvlink , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-20_test.obj  , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-23_test_dlink.cubin , sm_86 , nvcc , 30.7227 , ms
+test.cu  , fatbinary , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-23_test_dlink.cubin  , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-13_test_dlink.fatbin ,  , nvcc , 23.1246 , ms
+test.cu  , cl.exe (compiling) , C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin\crt\link.stub  , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-25_test_dlink.obj ,  , nvcc , 74.4498 , ms
+test.cu  , cl.exe (linking) , C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-25_test_dlink.obj C:/Users/user/AppData/Local/Temp/tmpxft_00003c40_00000000-20_test.obj  , test.exe ,  , nvcc , 144.7690 , ms
+ , nvcc (driver) ,  , test.exe ,  , nvcc , 10.5391 , ms
