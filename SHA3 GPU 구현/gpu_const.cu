@@ -18,7 +18,7 @@ typedef struct {
 } shake256incctx;
 
 // Round constants
-__device__ uint64_t RC[24] = {
+__constant__ uint64_t RC[24] = {
     0x0000000000000001, 0x0000000000008082, 0x800000000000808a,
     0x8000000080008000, 0x000000000000808b, 0x0000000080000001,
     0x8000000080008081, 0x8000000000008009, 0x000000000000008a,
@@ -30,12 +30,12 @@ __device__ uint64_t RC[24] = {
 };
 
 // Rotation offsets
-__device__ const int r_offset[24] = {
+__constant__ const int r_offset[24] = {
     1,  3,  6,  10, 15, 21, 28, 36, 45, 55, 2,  14, 
     27, 41, 56, 8,  25, 43, 62, 18, 39, 61, 20, 44
 };
 
-__device__ const int piln[24] = {
+__constant__ const int piln[24] = {
     10, 7,  11, 17, 18, 3, 5,  16, 8,  21, 24, 4, 
     15, 23, 19, 13, 12, 2, 20, 14, 22, 9,  6,  1 
 };
