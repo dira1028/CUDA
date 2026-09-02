@@ -183,7 +183,7 @@ __constant__ uint8_t seed[32] = {0xff, 0xee, 0xdd, 0xcc, 0xbb, 0xaa, 0x99, 0x88,
 
 /* ================== Benchmark ================== */
 __global__ void benchmark_shake128(int iterations) {
-    uint64_t state[26];
+    __shared__ uint64_t state[26];
     uint32_t rate = SHAKE128_RATE;
     uint8_t p = 0x1F;    
 
