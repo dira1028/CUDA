@@ -3,9 +3,9 @@ CC = gcc
 CXX = g++
 
 # 최적화 및 경고 옵션
-CFLAGS = -O3 -Wall
+CFLAGS = -O3 -w
 # Windows/Linux GCC 모두 MSVC 전용 보안 함수가 없으므로 표준 함수 치환 매크로 적용
-CXXFLAGS = -O3 -Wall -D"fopen_s(fp,fmt,mode)=(*(fp)=fopen(fmt,mode))" -D"fprintf_s=fprintf"
+CXXFLAGS = -O3 -w -D"fopen_s(fp,fmt,mode)=(*(fp)=fopen(fmt,mode))" -D"fprintf_s=fprintf"
 
 # OS 자동 감지 및 환경별 변수 설정
 ifeq ($(OS),Windows_NT)

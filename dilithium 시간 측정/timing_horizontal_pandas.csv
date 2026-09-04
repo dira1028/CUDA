@@ -1,0 +1,2 @@
+﻿Expand A,Expand S,NTT S,A * s1,INTT t1,Power2Round,,,,,Expand A,ExpandMask,A * y,Highbits w1,c tilde,c,"c * s1, c*s2",ct0,Make Hint,"NTT s1, s2, t0",NTT y,INVNTT A * y,NTT c,"INTT c * s1, c*s2",INTT ct0,,,,,"tr, mu",Expand A,A * z,c * t1,Use Hint,c tilde,NTT z,NTT c,NTT t1,INTT w1
+1257.3075,220.9759,85.5626,72.3757,102.6514,21.0457,,,,,1257.822,307.6013,82.2259,21.4761,109.6107,16.9095,30.5913,15.4665,17.5636,260.1857,85.9987,102.2929,21.4825,205.7202,104.0554,,,,,149.3952,1256.7346,72.7441,15.2847,27.5637,0.0156,86.5041,21.368,86.4637,102.4422
