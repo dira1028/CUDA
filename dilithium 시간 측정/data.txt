@@ -1,14 +1,12 @@
-=== ML-DSA-44 Sign & Verify Test ===
-
-*        DS_timer Report        *
+        DS_timer Report        *
 * The number of timer = 10, counter = 10
 **** Timer report ****
-Expand A : 1257.30750 ms
-Expand S : 220.97590 ms
-NTT S : 85.56260 ms
-A * s1 : 72.37570 ms
-INTT t1 : 102.65140 ms
-Power2Round : 21.04570 ms
+Expand A : 81293.87000 ms
+Expand S : 17161.44500 ms
+NTT S : 15780.25800 ms
+A * s1 : 10285.78300 ms
+INTT t1 : 17459.27900 ms
+Power2Round : 4679.84900 ms
 **** Counter report ****
 *        End of the report      *
 ===========================
@@ -17,21 +15,21 @@ Power2Round : 21.04570 ms
 *        DS_timer Report        *
 * The number of timer = 20, counter = 20
 **** Timer report ****
-Expand A : 1257.82200 ms
-ExpandMask : 307.60130 ms
-A * y : 82.22590 ms
-Highbits w1 : 21.47610 ms
-c tilde : 109.61070 ms
-c : 16.90950 ms
-c * s1, c*s2 : 30.59130 ms
-ct0 : 15.46650 ms
-Make Hint : 17.56360 ms
-NTT s1, s2, t0 : 260.18570 ms
-NTT y : 85.99870 ms
-INVNTT A * y : 102.29290 ms
-NTT c  : 21.48250 ms
-INTT c * s1, c*s2 : 205.72020 ms
-INTT ct0 : 104.05540 ms
+Expand A : 80949.63500 ms
+ExpandMask : 19162.93200 ms
+A * y : 12075.84300 ms
+Highbits w1 : 4679.98800 ms
+c tilde : 6196.76800 ms
+c : 1067.87800 ms
+c * s1, c*s2 : 4751.08500 ms
+ct0 : 2372.11700 ms
+Make Hint : 2790.34000 ms
+NTT s1, s2, t0 : 47360.85400 ms
+NTT y : 15786.68600 ms
+INVNTT A * y : 17365.66600 ms
+NTT c  : 3949.13300 ms
+INTT c * s1, c*s2 : 34741.31700 ms
+INTT ct0 : 17363.89600 ms
 **** Counter report ****
 *        End of the report      *
 ===========================
@@ -40,15 +38,15 @@ Verify
 *        DS_timer Report        *
 * The number of timer = 20, counter = 20
 **** Timer report ****
-tr, mu : 149.39520 ms
-Expand A : 1256.73460 ms
-A * z : 72.74410 ms
-c * t1 : 15.28470 ms
-Use Hint : 27.56370 ms
-c tilde : 0.01560 ms
-NTT z : 86.50410 ms
-NTT c : 21.36800 ms
-NTT t1 : 86.46370 ms
-INTT w1 : 102.44220 ms
+tr, mu : 8309.74900 ms
+Expand A : 80916.26500 ms
+A * z : 10287.43500 ms
+c * t1 : 2374.66500 ms
+Use Hint : 4825.93800 ms
+c tilde : 0.01200 ms
+NTT z : 15775.62900 ms
+NTT c : 3946.10800 ms
+NTT t1 : 15774.91600 ms
+INTT w1 : 17372.87300 ms
 **** Counter report ****
 *        End of the report      *

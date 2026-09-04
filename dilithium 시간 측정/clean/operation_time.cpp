@@ -1,6 +1,6 @@
 #include "DS_timer.h"
 
-#define ITERATION_COUNT 10000
+#define ITERATION_COUNT 1000000
 
 int REJ_FLAG = 0;
 extern "C"
@@ -577,12 +577,15 @@ int PQCLEAN_MLDSA44_CLEAN_crypto_sign_verify_ctx(const uint8_t *sig,
     /* Call random oracle and verify challenge */
 
     timer.onTimer(5);
-    shake256_inc_init(&state);
-    shake256_inc_absorb(&state, mu, CRHBYTES);
-    shake256_inc_absorb(&state, buf, K * POLYW1_PACKEDBYTES);
-    shake256_inc_finalize(&state);
-    shake256_inc_squeeze(c2, CTILDEBYTES, &state);
-    shake256_inc_ctx_release(&state);
+    for (int i = 0; i < ITERATION_COUNT; i++){
+        shake256_inc_init(&state);
+        shake256_inc_absorb(&state, mu, CRHBYTES);
+        shake256_inc_absorb(&state, buf, K * POLYW1_PACKEDBYTES);
+        shake256_inc_finalize(&state);
+        shake256_inc_squeeze(c2, CTILDEBYTES, &state);
+        shake256_inc_ctx_release(&state);
+    }
+ 
     timer.offTimer(5);
     timer.setTimerName(5, "c tilde");
 
