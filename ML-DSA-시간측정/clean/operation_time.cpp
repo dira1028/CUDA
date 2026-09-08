@@ -29,6 +29,8 @@ int PQCLEAN_MLDSA44_CLEAN_crypto_sign_keypair(uint8_t *pk, uint8_t *sk)
     DS_timer timer(10);
     timer.initTimers();
 
+    timer.onTimer(8);
+
     /* Get randomness for rho, rhoprime and key */
     randombytes(seedbuf, SEEDBYTES);
     seedbuf[SEEDBYTES + 0] = K;
@@ -128,6 +130,8 @@ int PQCLEAN_MLDSA44_CLEAN_crypto_sign_keypair(uint8_t *pk, uint8_t *sk)
 
     PQCLEAN_MLDSA44_CLEAN_pack_sk(sk, rho, tr, key, &t0, &s1, &s2);
 
+    timer.offTimer(8);
+    timer.setTimerName(8, "KeyGen Time");
     timer.printTimer();
 
     return 0;
@@ -157,6 +161,8 @@ int PQCLEAN_MLDSA44_CLEAN_crypto_sign_signature_ctx(uint8_t *sig,
 
     DS_timer timer(20);
     timer.initTimers();
+
+    timer.onTimer(19);
 
     rho = seedbuf;
     tr = rho + SEEDBYTES;
@@ -386,6 +392,8 @@ rej:
     /* Write signature */
     PQCLEAN_MLDSA44_CLEAN_pack_sig(sig, sig, &z, &h);
     *siglen = PQCLEAN_MLDSA44_CLEAN_CRYPTO_BYTES;
+    timer.offTimer(19);
+    timer.setTimerName(19, "Sign Time");
     printf("===========================\n=========================\n");
     timer.printTimer();
 
@@ -451,6 +459,8 @@ int PQCLEAN_MLDSA44_CLEAN_crypto_sign_verify_ctx(const uint8_t *sig,
 
     DS_timer timer(20);
     timer.initTimers();
+
+    timer.onTimer(19);
 
     if (ctxlen > 255 || siglen != PQCLEAN_MLDSA44_CLEAN_CRYPTO_BYTES)
     {
@@ -595,6 +605,9 @@ int PQCLEAN_MLDSA44_CLEAN_crypto_sign_verify_ctx(const uint8_t *sig,
     timer.offTimer(7);
     timer.setTimerName(7, "c tilde");
 
+
+    timer.offTimer(19);
+    timer.setTimerName(19, "Verify Time");
     printf("===========================\n=========================\n");
     printf("Verify");
     timer.printTimer();
