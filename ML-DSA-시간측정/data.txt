@@ -3,14 +3,15 @@
 *        DS_timer Report        *
 * The number of timer = 10, counter = 10
 **** Timer report ****
-H(zeta) : 829.85400 ms
-Expand A : 81276.21100 ms
-Expand S : 14790.92400 ms
-NTT S : 15861.57700 ms
-A * s1 : 12153.09000 ms
-INTT t1 : 17491.01400 ms
-Power2Round : 4709.41200 ms
-tr : 7297.63100 ms
+H(zeta) : 825.19900 ms
+Expand A : 81481.62200 ms
+Expand S : 17265.81500 ms
+NTT S : 15835.17600 ms
+A * s1 : 12133.48600 ms
+INTT t1 : 17490.49800 ms
+Power2Round : 4702.28600 ms
+tr : 7281.13100 ms
+KeyGen Time : 157015.29200 ms
 **** Counter report ****
 *        End of the report      *
 ===========================
@@ -19,23 +20,24 @@ tr : 7297.63100 ms
 *        DS_timer Report        *
 * The number of timer = 20, counter = 20
 **** Timer report ****
-Compute mu : 1053.25000 ms
-Compute rho''  : 1574.29500 ms
-Expand A : 81296.53200 ms
-ExpandMask : 19250.67200 ms
-A * y : 12152.60500 ms
-Highbits w1 : 4681.73900 ms
-c tilde : 6204.94100 ms
-c : 1066.68200 ms
-c * s1, c*s2 : 4752.15000 ms
-ct0 : 2373.41800 ms
-Make Hint : 2841.05100 ms
-NTT s1, s2, t0 : 47603.53800 ms
-NTT y : 15851.46700 ms
-INVNTT A * y : 17429.27700 ms
-NTT c  : 3953.14800 ms
-INTT c * s1, c*s2 : 34733.44200 ms
-INTT ct0 : 17361.47000 ms
+Compute mu : 1064.64500 ms
+Compute rho''  : 1574.17100 ms
+Expand A : 81289.36000 ms
+ExpandMask : 19254.40200 ms
+A * y : 12136.24900 ms
+Highbits w1 : 4704.17000 ms
+c tilde : 6230.58700 ms
+c : 1071.44000 ms
+c * s1, c*s2 : 4770.96500 ms
+ct0 : 2383.54800 ms
+Make Hint : 2893.47400 ms
+NTT s1, s2, t0 : 47512.78400 ms
+NTT y : 15876.31300 ms
+INVNTT A * y : 17479.03900 ms
+NTT c  : 3957.60500 ms
+INTT c * s1, c*s2 : 34945.76900 ms
+INTT ct0 : 17468.55700 ms
+Sign Time : 274613.21700 ms
 **** Counter report ****
 *        End of the report      *
 ===========================
@@ -44,17 +46,18 @@ Verify
 *        DS_timer Report        *
 * The number of timer = 20, counter = 20
 **** Timer report ****
-tr : 7256.20000 ms
-mu : 1049.37700 ms
-c(sample) : 1067.04000 ms
-Expand A : 80915.82800 ms
-A * z : 10284.90800 ms
-c * t1 : 2373.94000 ms
-Use Hint : 4894.09200 ms
-c tilde : 6195.14300 ms
-NTT z : 15769.98900 ms
-NTT c : 3944.02500 ms
-NTT t1 : 15771.85100 ms
-INTT w1 : 17402.36600 ms
+tr : 7300.17500 ms
+mu : 1054.17600 ms
+c(sample) : 1070.98900 ms
+Expand A : 81276.38300 ms
+A * z : 10335.69700 ms
+c * t1 : 2386.61000 ms
+Use Hint : 4884.75900 ms
+c tilde : 6223.60400 ms
+NTT z : 15832.50900 ms
+NTT c : 3971.05600 ms
+NTT t1 : 15853.36200 ms
+INTT w1 : 17475.91500 ms
+Verify Time : 167665.30700 ms
 **** Counter report ****
 *        End of the report      *
