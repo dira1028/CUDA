@@ -1,0 +1,60 @@
+=== ML-DSA-44 Sign & Verify Test ===
+
+*        DS_timer Report        *
+* The number of timer = 10, counter = 10
+**** Timer report ****
+H(zeta) : 829.85400 ms
+Expand A : 81276.21100 ms
+Expand S : 14790.92400 ms
+NTT S : 15861.57700 ms
+A * s1 : 12153.09000 ms
+INTT t1 : 17491.01400 ms
+Power2Round : 4709.41200 ms
+tr : 7297.63100 ms
+**** Counter report ****
+*        End of the report      *
+===========================
+=========================
+
+*        DS_timer Report        *
+* The number of timer = 20, counter = 20
+**** Timer report ****
+Compute mu : 1053.25000 ms
+Compute rho''  : 1574.29500 ms
+Expand A : 81296.53200 ms
+ExpandMask : 19250.67200 ms
+A * y : 12152.60500 ms
+Highbits w1 : 4681.73900 ms
+c tilde : 6204.94100 ms
+c : 1066.68200 ms
+c * s1, c*s2 : 4752.15000 ms
+ct0 : 2373.41800 ms
+Make Hint : 2841.05100 ms
+NTT s1, s2, t0 : 47603.53800 ms
+NTT y : 15851.46700 ms
+INVNTT A * y : 17429.27700 ms
+NTT c  : 3953.14800 ms
+INTT c * s1, c*s2 : 34733.44200 ms
+INTT ct0 : 17361.47000 ms
+**** Counter report ****
+*        End of the report      *
+===========================
+=========================
+Verify
+*        DS_timer Report        *
+* The number of timer = 20, counter = 20
+**** Timer report ****
+tr : 7256.20000 ms
+mu : 1049.37700 ms
+c(sample) : 1067.04000 ms
+Expand A : 80915.82800 ms
+A * z : 10284.90800 ms
+c * t1 : 2373.94000 ms
+Use Hint : 4894.09200 ms
+c tilde : 6195.14300 ms
+NTT z : 15769.98900 ms
+NTT c : 3944.02500 ms
+NTT t1 : 15771.85100 ms
+INTT w1 : 17402.36600 ms
+**** Counter report ****
+*        End of the report      *
